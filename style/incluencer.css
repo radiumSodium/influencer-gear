@@ -10,11 +10,16 @@
     --primary-btn-bg: rgba(224, 44, 109, 1);
     --footer-bg: rgba(10, 8, 38, 1);
     --logo-black: rgba(58, 58, 58, 1);
+    --description-color: rgba(120, 120, 133, 1);
 }
 
 *{
     margin: 0;
     pad: 0;
+}
+
+body{
+    font-size: 16px;
 }
 
 /* Common elemet  */
@@ -32,7 +37,9 @@
 .navbar{
     display: flex;
     justify-content: space-between;
-
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 
 .logo{
@@ -171,11 +178,105 @@ header{
 }
 
 .card img{
-    border-radius: 5px;
+    border-radius: 0.32rem;
 }
 
 .card .card-title{
     font-family: var(--poppin-font);
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.card .price{
+    font-family: var(--inter-font);
+    font-size: 1.5rem;
+    color: var(--logo-black);
+}
+
+.card .card-description{
+    font-family: var(--inter-font);
+    font-weight: bold;
+    font-size:.875rem;
+    color: var(--description-color);
+}
+
+.seemore{
+    font-family: var(--poppin-font);
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 3.125rem;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: right;
+}
+
+
+/* feature  */
+#feature{
+    padding: 6.25rem 10.3125rem;
+}
+
+.feature-container{
+    display: flex;
+    gap: 5.93rem;
+}
+
+
+.feature-container .text-section .title{
+    font-weight: bold;
+    font-family: var(--poppin-font);
+    font-size: 2.375rem;
+}
+
+.feature-container .text-section .description{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--poppin-font);
+    color: var(--description-color);
+}
+
+.secondary-btn{
+    background-color: var(--primary-btn-bg);
+    color: white;
+    font-weight: bold;
+    font-family: var(--poppin-font);
+    font-size: 1rem;
+    padding: 10px 24px;
+    border: none;
+}
+
+.text-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer{
+    background-color: rgba(10, 8, 38, 1);
+    margin: 0 auto;
+}
+
+.footer-container{
+    color: white;
+    padding: 3.125rem 0;
+    text-align: center;
+    
+}
+
+.footer-heading{
+    font-weight: bold;
+    font-family: var(--poppin-font);
+    font-size: 1.5rem;
+}
+
+.footer-desc{
+    font-family: var(--manrope-font);
+    font-size: .865rem;
+    color: rgba(217, 219, 225, 1);
+}
+
+.social-container{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
