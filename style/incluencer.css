@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+:root{
+    --poppin-font: "Poppins", sans-serif;
+    --inter-font: "Inter", sans-serif;
+    --manrope-font: "Manrope", sans-serif;
+    --primary-btn-bg: rgba(224, 44, 109, 1);
+    --footer-bg: rgba(10, 8, 38, 1);
+    --logo-black: rgba(58, 58, 58, 1);
+}
+
+*{
+    margin: 0;
+    pad: 0;
+}
+
+/* Common elemet  */
+.primary-btn{
+    background-color: var(--primary-btn-bg);
+    border-radius: 2.56rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 24px;
+}
+
+/*       Header.       */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    font-family: var(--poppin-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-container{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: var(--poppin-font);
+    font-size: 1em;
+    font-weight: 600;;
+    color: var(--logo-black);
+}
+
+
+/* Hero Section  */
+
+header{
+    padding: 5rem 7.5rem;
+}
+
+.hero{
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top:3.124rem;
+    
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero .title{
+    font-family: var(--poppin-font);
+    font-size: 3.25rem;
+    font-weight: bold;
+    color: var(--logo-black);
+}
+
+.hero .description{
+    font-family: var(--poppin-font);
+    font-weight: 1rem;
+    font-weight: 600;
+    color: var(--logo-black);
+}
+
+.image-container, .text-container{
+    flex:1;
+}
+
+.image-container{
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.image-container .bg-circle{
+    position: absolute;
+    z-index: -5;
+
+}
+
+.image-container .camera{
+    pointer-events: none;
+}
+
+.brand-logo{
+    padding: 6.25rem 10.3125rem;
+}
+
+.brand-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 4rem;
+
+}
+
+.brand-logo .gradient-hr{
+    
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.1) 20%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.1) 80%,
+        transparent 100%
+    );
+    
+}
+
+
+/* Popular Collection  */
+
+#popular-collection{
+    padding: 0 12.25rem;
+}
+
+.popular-title{
+    font-family: var(--poppin-font);
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: var(--logo-black);
+    text-align: center;
+}
+
+.card-container{
+    padding-top: 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.card .card-title{
+    font-family: var(--poppin-font);
+    font-size: 1.75rem;
+    font-weight: 600;
+}
